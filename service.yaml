@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: kube-decon
+apec:
+  selector:
+    app: kube-decon
+    tier: web
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 2015
